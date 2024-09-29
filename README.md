@@ -63,10 +63,11 @@ python genefinder_v4.py (path/to/genome.fasta) (minimum_length) (SD_sequence) > 
 
 ```
 
-### Applying ORF finder to all genome files in the NCBI Bacteria dataset.
+## Applying ORF finder to all genome files in the NCBI Bacteria dataset.
 ```
 find /home/ahmedo/ncbi_dataset/data -type f -name "*GCF*.fna" | while read genome; do python ~/genefinder_v2.py "$genome"; done > fourteen_gen.txt 
 
 ```
 
+### Problem number 72 of rosalind is solved in [ORF_protein.ipynb](https://github.com/omar404ahmed/gene_finder/blob/main/ORF_protein.ipynb) 
 
