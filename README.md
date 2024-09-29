@@ -14,24 +14,35 @@ To utilise this tool:
 
 ## Descriptions of the four versions of Gene Finder tool
 
-#### Ver1
+### Ver1
 
-Creation of this version was preceeded by creation of github repository and cloning it onto the ibex cluster.
-Ver1 located open reading frames (ORFs) only in forward strands and covers three of six possible reading frames.
+Creation of this version was preceeded by creation of github repository and cloning it onto the ibex cluster. Ver1 located open reading frames (ORFs) only in forward strands and covers three of six possible reading frames.
+
+
 ![Alt text](/Screenshots/1.png?raw=true "Output of Ver1")
 
 
-#### Ver2
+### Ver2
 
-This version of the Gene Finder considers all possible reading frames by utilising ```reverse_complement``` method of the ```Seq``` object.
+This version of the Gene Finder considers all possible reading frames by utilising ```reverse_complement``` method of the ```Seq``` object. It is of note that the forward strands have label as ```+``` while reverse strands have label ```-```
+
+
 ![Alt text](/Screenshots/2.png?raw=true "Output of Ver2")
 
 
-#### Ver3
+### Ver3
 
 Ver3 involved creating a check to avoid filtering smaller ORFs. The motivation being that smaller ORFs are unlikely to be functional genes.
 
-#### Ver4
+![Alt text](/Screenshots/3.png?raw=true "Output of Ver3")
+
+
+### Ver4
+
+The final filter is implemented in Ver4, where we filter all predicted ORFs based on whether they contain a Shine-Dalgarno sequence up to 20bp upstream of the start codon.
+
+![Alt text](/Screenshots/4.png?raw=true "Output of Ver4")
+
 
 
 ## CLI commands to execute scripts
