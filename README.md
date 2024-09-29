@@ -6,8 +6,12 @@ This repository is a python3 + biopython based tool for finding Open Reading Fra
 * Bio-Python (ver 1.6 +)
 * Python (ver 3.6 +)
 
+To utilise this tool:
+* Clone the repository onto your local machine.
+* Install the dependencies using either ```conda install biopython``` or ```pip install biopython ``` .
+* Pass inputs as arguments as described in the sectioned titled [CLI commands to execute scripts](#cli-commands-to-execute-scripts)
 
-## CLI commands to run python scripts
+## CLI commands to execute scripts
 ```
 [ver 1]
 python genefinder_v1.py (genome.fasta) > out1.txt
