@@ -25,6 +25,9 @@ python genefinder_v2.py (genome.fasta) > out2.txt
 
 
 ### Applying ORF finder to all genome files in the NCBI Bacteria dataset.
-``` find /home/ahmedo/ncbi_dataset/data -type f -name "*GCF*.fna" | while read genome; do python ~/genefinder_v2.py "$genome"; done > fourteen_gen.txt ```
+```
+find /home/ahmedo/ncbi_dataset/data -type f -name "*GCF*.fna" | while read genome; do python ~/genefinder_v2.py "$genome"; done > fourteen_gen.txt 
+
+```
 
 
