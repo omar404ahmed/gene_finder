@@ -12,13 +12,34 @@ To utilise this tool:
 * Pass inputs as arguments as described [in this section](#cli-commands-to-execute-scripts).
 
 
-## Description of the four versions of Gene Finder tool
+## Descriptions of the four versions of Gene Finder tool
+
+#### Ver1
+
+Creation of this version was preceeded by creation of github repository and cloning it onto the ibex cluster.
+Ver1 located open reading frames (ORFs) only in forward strands and covers three of six possible reading frames.
+![Alt text](/Screenshots/1.png?raw=true "Output of Ver1")
+
+
+#### Ver2
+
+This version of the Gene Finder considers all possible reading frames by utilising ```reverse_complement``` method of the ```Seq``` object.
+![Alt text](/Screenshots/2.png?raw=true "Output of Ver2")
+
+
+#### Ver3
+
+Ver3 involved creating a check to avoid filtering smaller ORFs. The motivation being that smaller ORFs are unlikely to be functional genes.
+
+#### Ver4
 
 
 ## CLI commands to execute scripts
+
+
 ```
 [ver 1]
-python genefinder_v1.py (/path/to/genome.fasta) > out1.txt
+python genefinder_v1.py (/path/to/genome.fasta) > out.txt
 
 [ver 2]
 python genefinder_v2.py (/path/to/genome.fasta) > out2.txt
@@ -27,10 +48,9 @@ python genefinder_v2.py (/path/to/genome.fasta) > out2.txt
 python genefinder_v3.py (path/to/genome.fasta) (minimum_length) > out3.txt
 
 [ver 4]
-
+python genefinder_v4.py (path/to/genome.fasta) (minimum_length) (SD_sequence) > out4.txt
 
 ```
-
 
 ### Applying ORF finder to all genome files in the NCBI Bacteria dataset.
 ```
