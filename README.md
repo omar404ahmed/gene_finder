@@ -9,7 +9,7 @@ This repository is a python3 + biopython based tool for finding Open Reading Fra
 To utilise this tool:
 * Clone the repository onto your local machine.
 * Install the dependencies using either ```conda install biopython``` or ```pip install biopython ``` .
-* Pass inputs as arguments as described in the sectioned titled [CLI commands to execute scripts](#cli-commands-to-execute-scripts)
+* Pass inputs as arguments as described [in this section](#cli-commands-to-execute-scripts).
 
 ## CLI commands to execute scripts
 ```
