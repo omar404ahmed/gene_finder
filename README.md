@@ -69,5 +69,7 @@ find /home/ahmedo/ncbi_dataset/data -type f -name "*GCF*.fna" | while read genom
 
 ```
 
+![Alt text](/Screenshots/5.png?raw=true)
+
 ### Problem number 72 of rosalind is solved in [ORF_protein.ipynb](https://github.com/omar404ahmed/gene_finder/blob/main/ORF_protein.ipynb) 
 
